@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bubba Words</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="app">
+      <header class="topbar">
+        <div>
+          <div class="eyebrow">BUBBA WORDS</div>
+          <h1 id="roundLabel">Round 1</h1>
+        </div>
+        <div class="pill" id="timer">00:45</div>
+      </header>
+
+      <section class="cards" id="rules"></section>
+
+      <section class="answer-row" id="answerRow"></section>
+
+      <section class="keyboard" id="keyboard"></section>
+
+      <section class="actions">
+        <button class="action primary" id="submitBtn">Submit</button>
+        <button class="action" id="hintBtn">Hint</button>
+        <button class="action" id="shuffleBtn">Shuffle</button>
+        <button class="action" id="skipBtn">Skip</button>
+      </section>
+
+      <section class="status">
+        <div id="feedback">Make a word that fits every rule.</div>
+        <div class="meter"><div id="streakFill"></div></div>
+      </section>
+
+      <section class="bottom">
+        <div>Streak <span id="streakValue">0</span></div>
+        <div>Coins <span id="coinValue">0</span></div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
